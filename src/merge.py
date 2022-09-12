@@ -23,9 +23,9 @@ def merge(x: list[int], y: list[int]) -> list[int]:
             z.append(y[j])
             j += 1
     if i == len(x):
-        z.append(y[j:])
+        z.extend(y[j:])
     elif j == len(x):
-        z.append(x[i:])
+        z.extend(x[i:])
     # At least one of the lists is empty now. Copy the
     # remainder of the other into z.
     return z
