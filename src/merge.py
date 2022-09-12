@@ -20,7 +20,7 @@ def merge(x: list[int], y: list[int]) -> list[int]:
             z.append(x[i])
             i += 1
         else:
-            z.append(y[i])
+            z.append(y[j])
             j += 1
     if i == len(x):
         z.append(y[j:])
